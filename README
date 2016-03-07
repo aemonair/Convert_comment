@@ -1,0 +1,24 @@
+#This is a program to convert the comment.
+#
+#Please use the "make" to test.
+
+#本程序在于将C语言格式的//注释转换为C++格式的/**/
+#请使用make命令进行测试。
+#
+#├── bin
+#│   ├── a.out
+#│   └── test
+#├── file
+#│   ├── input.c
+#│   └── output.c
+#├── head
+#│   └── convert_comment.h
+#├── Makefile
+#└── src
+#    ├── convert_comment.cpp
+#    └── main.cpp
+#
+#使用make生成bin/test;
+#运行test将file/input.c转化为file/output.c;
+#则转化了注释。
+#
