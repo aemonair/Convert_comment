@@ -9,16 +9,16 @@ int main(int argc, char **argv)
     FILE *fp_out = NULL;
 
     //read the file named "input.c"
-    if( (fp_in = fopen("file/input.c","r")) ==NULL) 
+    if( (fp_in = fopen(argv[1],"r")) ==NULL) 
     {
-        cout<<"Open input.c File Failure!"<<endl;
+        cout<<"Open"<<argv[1]<<File Failure!"<<endl;
         return -1;
     }
     
     //write the file named "output.c"
-    if((fp_out = fopen("file/output.c","w")) == NULL)
+    if((fp_out = fopen(argv[2],"w")) == NULL)
     {
-        cout<<"Open output.c File Failure!"<<endl;
+        cout<<"Open"<<argv[2]<<File Failure!"<<endl;
         return -1;
     }
 
