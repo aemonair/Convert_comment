@@ -13,7 +13,7 @@ all : install
 
 install:
 	@echo "-objects-"
-	g++  $(SRC)/convert_comment.cpp $(SRC)/main.cpp -o $(TARGET) -I $(HEAD)
+	g++  $(SRC)/convert_comment.cpp $(SRC)/test_main.cpp -o $(TARGET) -I $(HEAD)
 
 	@echo "---------"
 	@date
