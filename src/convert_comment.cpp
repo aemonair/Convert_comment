@@ -213,6 +213,9 @@ void event_st_pro(char character)
         fputc(character, g_state.output_file);
         g_state.ulstate = OLD_COMMENT_STATE;
         break;
+    case '*':
+        fputc(character, g_state.output_file);
+        fputc('\', g_state.output_file);
     default:
         fputc(character, g_state.output_file);
         break;
